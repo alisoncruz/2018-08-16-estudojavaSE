@@ -1,0 +1,48 @@
+package entity;
+
+import java.io.Serializable;
+
+public class Disciplina implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private Integer idDisciplina;
+	private String nomeDisciplina;
+
+	public Disciplina() {
+	}
+
+	public Disciplina(Integer idDisciplina, String nomeDisciplina) {
+		this.idDisciplina = idDisciplina;
+		this.nomeDisciplina = nomeDisciplina;
+	}
+
+	@Override
+	public String toString() {
+		return "Disciplina [idDisciplina=" + idDisciplina + ", nomeDisciplina=" + nomeDisciplina + "]";
+	}
+
+	public Integer getIdDisciplina() {
+		return idDisciplina;
+	}
+
+	public void setIdDisciplina(Integer idDisciplina) {
+		this.idDisciplina = idDisciplina;
+	}
+
+	public String getNomeDisciplina() {
+		return nomeDisciplina;
+	}
+
+	public void setNomeDisciplina(String nomeDisciplina) {
+		this.nomeDisciplina = nomeDisciplina;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+}
